@@ -1,0 +1,9 @@
+{
+  "name": "moji-honest",
+  "version": "1.0.0",
+  "private": true,
+  "description": "文字起こしAI 本音比較 — 正直な比較 + アフィリエイト収益化 静的サイト",
+  "scripts": {
+    "build": "node build.js"
+  }
+}
