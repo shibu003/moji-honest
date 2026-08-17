@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://shibu003.github.io/moji-honest/sitemap.xml
