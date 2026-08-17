@@ -29,3 +29,5 @@ transcription-AI comparison site built on this engine.
 ## License
 
 MIT — see [LICENSE](LICENSE).
+
+Contributions need a sign-off: see [CLA.md](CLA.md).
