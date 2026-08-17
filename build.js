@@ -33,6 +33,7 @@ const cards = tools
     <dl>
       <dt>料金</dt><dd>${esc(t.price)}</dd>
       <dt>精度・特徴</dt><dd>${esc(t.accuracy)}</dd>
+      ${t.price_checked ? `<dt>確認日</dt><dd>${esc(t.price_checked)}（<a href="${esc(t.price_source)}" target="_blank" rel="nofollow noopener">公式の料金ページ</a>で確認）</dd>` : ""}
     </dl>
     <p class="good">◎ 向いている人</p><ul>${li(t.best_for)}</ul>
     <p class="bad">△ 向かない人</p><ul>${li(t.not_for)}</ul>

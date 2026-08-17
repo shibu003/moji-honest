@@ -11,7 +11,7 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ja_JP">
 <meta name="robots" content="index,follow">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"無料で一番使えるのは？","acceptedAnswer":{"@type":"Answer","text":"日本語の音声メモ・インタビューなら CLOVA Note（完全無料）、オンライン会議の録画+要約込みなら tl;dv の無料プランが手厚いです。"}},{"@type":"Question","name":"精度が一番高いのは？","acceptedAnswer":{"@type":"Answer","text":"日本語の会議では Notta が公称98.86%と高精度。ただし音質・話者数で実測は変わるため、無料枠で自分の環境を必ず試してください。"}},{"@type":"Question","name":"会社で正式な議事録に使いたい","acceptedAnswer":{"@type":"Answer","text":"権限管理・決裁フロー・導入サポートまで求めるなら スマート書記/Otolio。個人〜中小の効率化なら Notta で十分なことが多いです。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"CLOVA Note はもう使えないの？","acceptedAnswer":{"@type":"Answer","text":"使えません。CLOVA Note β は2025年7月31日でサービス終了し、後継は法人・個人向けの LINE WORKS AiNote です。AiNote にはフリープラン（共有300分/月・最大30人・1回60分）があるので、無料で日本語の文字起こしを試す用途はそのまま引き継げます。ただしフリープランのデータはAI学習に利用されるため、機密性が高い会議は有償プラン（ソロ 1,440円/月〜）を選んでください。"}},{"@type":"Question","name":"無料で一番使えるのは？","acceptedAnswer":{"@type":"Answer","text":"日本語の会議・インタビューを0円で試すなら LINE WORKS AiNote のフリープラン（300分/月）。オンライン会議の録画+文字起こしを無料枠で回したいなら tl;dv（録画・文字起こしは無制限、AIノートのみ月10回まで）。Notta の無料枠は月120分・1回3分までなので「試用」向けです。"}},{"@type":"Question","name":"精度が一番高いのは？","acceptedAnswer":{"@type":"Answer","text":"2026年8月時点で、公称精度の数値を公式サイトに出しているツールはほとんどありません（Notta の「98.86%」も現在の公式サイトからは消えています）。話者分離については LINE WORKS AiNote が国際コンペ DIHARD3（2021年）で世界3位という実績を公表しています。実測は音質・話者数・専門用語で大きく変わるので、必ず無料枠で自分の音声を試してください。"}},{"@type":"Question","name":"会社で正式な議事録に使いたい","acceptedAnswer":{"@type":"Answer","text":"権限管理・決裁フロー・導入サポートまで求めるなら Otolio（旧スマート書記）。人数課金ではなくAIクレジット制なので全社員にアカウントを配れますが、料金は非公開で営業デモ→14日間トライアルが前提です。個人〜中小の効率化なら Notta、LINE WORKS を使っている組織なら AiNote のチームプラン（19,800円/月〜）が手っ取り早いです。"}},{"@type":"Question","name":"掲載している料金はいつの情報？","acceptedAnswer":{"@type":"Answer","text":"各カードの「確認日」がその料金を公式の料金ページで直接確認した日付です。料金は予告なく変わるので、契約前に必ずリンク先の公式ページで再確認してください。"}}]}</script>
 <style>
 :root{--bg:#0e1116;--fg:#e6e9ef;--mut:#9aa4b2;--card:#161b22;--acc:#4f8cff;--good:#3fb950;--bad:#e3a008;--line:#232a35}
 @media (prefers-color-scheme:light){:root{--bg:#f7f8fa;--fg:#1a1f29;--mut:#5b6472;--card:#fff;--acc:#2563eb;--line:#e6e9ef}}
@@ -48,14 +48,14 @@ a{color:var(--acc)}
   <p class="tag">エンジニアが忖度なしで検証。「向かない人」まで書く、正直な文字起こしAI比較。</p>
 </header>
 <main class="wrap">
-  <p class="disc">本ページはアフィリエイト広告（PR）を含みます。ランキングは各ツールを実際に検証した上での編集部の見解で、報酬の有無で順位は変えていません。</p>
+  <p class="disc">本ページはアフィリエイト広告（PR）を含みます。ランキングは各ツールを実際に検証した上での編集部の見解で、報酬の有無で順位は変えていません。料金は公式の料金ページを直接確認し、確認日を各カードに明記しています。</p>
 
   <h2>30秒であなたに最適な1つを診断</h2>
   
   <div class="diag">
     <p class="diag-q">主な用途は？</p>
     <div class="diag-opts">
-      <button data-pick="notta">日本語の社内・オンライン会議</button><button data-pick="clovanote">とにかく無料で始めたい</button><button data-pick="fireflies">英語・多国籍チームの会議</button><button data-pick="plaud">対面商談・電話が多い</button><button data-pick="otolio">会社の正式議事録として運用</button>
+      <button data-pick="notta">日本語の社内・オンライン会議</button><button data-pick="ainote">とにかく無料で始めたい</button><button data-pick="fireflies">英語・多国籍チームの会議</button><button data-pick="plaud">対面商談・電話が多い</button><button data-pick="otolio">会社の正式議事録として運用</button>
     </div>
     <p class="diag-result" hidden>→ おすすめ: <a href="#" class="diag-link"></a></p>
   </div>
@@ -72,54 +72,43 @@ a{color:var(--acc)}
     </div>
     <p class="verdict">日本語の社内会議なら第一候補</p>
     <dl>
-      <dt>料金</dt><dd>無料プランあり / 有料 1,980円/月〜（ビジネス 8,280円/月〜）</dd>
-      <dt>精度・特徴</dt><dd>日本語認識精度 98.86%（公称）</dd>
+      <dt>料金</dt><dd>無料プランあり（120分/月・1回3分まで） / プレミアム 1,980円/月（年払いなら1,185円/月・1800分/月） / ビジネス 4,180円/月〜（1アカウント・年払い2,508円/月・文字起こし無制限） ※税込</dd>
+      <dt>精度・特徴</dt><dd>日本語UI・Web/アプリ/Chrome拡張/デスクトップに対応。SOC 2・ISO 27001・GDPR・HIPAA 準拠（公式）。※以前公称されていた「日本語精度98.86%」は現在の公式サイトに記載が無いため掲載していません</dd>
+      <dt>確認日</dt><dd>2026-08-17（<a href="https://www.notta.ai/pricing" target="_blank" rel="nofollow noopener">公式の料金ページ</a>で確認）</dd>
     </dl>
     <p class="good">◎ 向いている人</p><ul><li>日本語の会議・商談</li><li>個人〜中小の議事録自動化</li><li>Zoom/Teams/Google Meet 連携</li></ul>
-    <p class="bad">△ 向かない人</p><ul><li>完全無料で使い倒したい人（無料枠は月120分）</li><li>英語ネイティブ会議が主体の人</li></ul>
+    <p class="bad">△ 向かない人</p><ul><li>完全無料で使い倒したい人（無料枠は月120分・1回3分まで）</li><li>英語ネイティブ会議が主体の人</li></ul>
     <a class="cta" href="https://www.notta.ai/" target="_blank" rel="nofollow noopener">公式サイトで見る →</a>
+  </article>
+  <article class="card" id="ainote">
+    <div class="card-head">
+      <h3>LINE WORKS AiNote（旧 CLOVA Note の後継）</h3>
+      
+    </div>
+    <p class="verdict">無料で日本語文字起こしを試すなら、いまはここ</p>
+    <dl>
+      <dt>料金</dt><dd>フリー 0円（共有300分/月・最大30人・1回60分） / ソロ 1,440円/月（年額契約・月間契約は1,600円/月・600分/月） / チーム 19,800円/月（年額契約・6,000分/月） ※税抜</dd>
+      <dt>精度・特徴</dt><dd>累計登録100万人の「CLOVA Note β」の後継。話者分離は国際コンペ DIHARD3（2021年）で世界3位（公式）。日/英/中/韓に対応</dd>
+      <dt>確認日</dt><dd>2026-08-17（<a href="https://line-works.com/ainote/free-solo/" target="_blank" rel="nofollow noopener">公式の料金ページ</a>で確認）</dd>
+    </dl>
+    <p class="good">◎ 向いている人</p><ul><li>0円で日本語の文字起こしを試したい人</li><li>個人・フリーランス（ソロプラン）</li><li>CLOVA Note を使っていた人の移行先</li></ul>
+    <p class="bad">△ 向かない人</p><ul><li>フリープランのデータがAI学習に使われるのが困る人（学習利用なしは有償プランのみ）</li><li>1回60分を超える録音を無料で回したい人</li></ul>
+    <a class="cta" href="https://line-works.com/ainote/" target="_blank" rel="nofollow noopener">公式サイトで見る →</a>
   </article>
   <article class="card" id="tldv">
     <div class="card-head">
       <h3>tl;dv</h3>
       
     </div>
-    <p class="verdict">とにかく無料で始めたいならここ</p>
+    <p class="verdict">無料枠で録画+文字起こしを回したいならここ</p>
     <dl>
-      <dt>料金</dt><dd>無料プランが手厚い / 有料は $18/月〜（目安・要確認）</dd>
-      <dt>精度・特徴</dt><dd>多言語対応・日本語も実用</dd>
+      <dt>料金</dt><dd>無料プランあり（録画・文字起こしは無制限、AIノートは月10回まで） / Pro $29/シート/月（年払い $18） / Business $39/シート/月（年払い $29） / Enterprise 要相談</dd>
+      <dt>精度・特徴</dt><dd>30以上の言語に対応。録画・文字起こし・保存容量は無料プランでも無制限（データ保持は最大3か月）</dd>
+      <dt>確認日</dt><dd>2026-08-17（<a href="https://tldv.io/app/pricing/" target="_blank" rel="nofollow noopener">公式の料金ページ</a>で確認）</dd>
     </dl>
     <p class="good">◎ 向いている人</p><ul><li>コストを抑えたいスタートアップ</li><li>オンライン会議の録画+要約</li><li>海外ツール込みで検討できる人</li></ul>
     <p class="bad">△ 向かない人</p><ul><li>国産・日本語サポート重視の企業</li><li>オフライン録音メインの人</li></ul>
-    <a class="cta" href="https://tldv.io/ja/" target="_blank" rel="nofollow noopener">公式サイトで見る →</a>
-  </article>
-  <article class="card" id="otolio">
-    <div class="card-head">
-      <h3>スマート書記 / Otolio</h3>
-      
-    </div>
-    <p class="verdict">自治体・大企業のガチ議事録運用向け</p>
-    <dl>
-      <dt>料金</dt><dd>ライセンス料 10,000円/月〜 + AIパック（要見積）</dd>
-      <dt>精度・特徴</dt><dd>日本語業務特化・編集ワークフロー強い</dd>
-    </dl>
-    <p class="good">◎ 向いている人</p><ul><li>決裁・共有まで含む正式議事録</li><li>情シス管理・権限が要る組織</li><li>導入サポート重視</li></ul>
-    <p class="bad">△ 向かない人</p><ul><li>個人・少人数（オーバースペック&amp;割高）</li><li>今すぐ無料で試したい人</li></ul>
-    <a class="cta" href="https://otolio.jp/" target="_blank" rel="nofollow noopener">公式サイトで見る →</a>
-  </article>
-  <article class="card" id="clovanote">
-    <div class="card-head">
-      <h3>CLOVA Note</h3>
-      
-    </div>
-    <p class="verdict">無料で日本語文字起こしだけ欲しい人の定番</p>
-    <dl>
-      <dt>料金</dt><dd>無料（LINE/NAVER 提供）</dd>
-      <dt>精度・特徴</dt><dd>日本語の音声メモ・インタビューに十分</dd>
-    </dl>
-    <p class="good">◎ 向いている人</p><ul><li>個人の取材・インタビュー起こし</li><li>1円もかけたくない人</li><li>スマホ録音メイン</li></ul>
-    <p class="bad">△ 向かない人</p><ul><li>会議連携・要約自動化を求める人</li><li>商用の厳密なSLAが要る企業</li></ul>
-    <a class="cta" href="https://clovanote.line.me/" target="_blank" rel="nofollow noopener">公式サイトで見る →</a>
+    <a class="cta" href="https://tldv.io/" target="_blank" rel="nofollow noopener">公式サイトで見る →</a>
   </article>
   <article class="card" id="fireflies">
     <div class="card-head">
@@ -128,12 +117,28 @@ a{color:var(--acc)}
     </div>
     <p class="verdict">多国籍チーム・英語会議が多いなら</p>
     <dl>
-      <dt>料金</dt><dd>無料プランあり / 有料 $10/月〜（目安・要確認）</dd>
-      <dt>精度・特徴</dt><dd>60言語以上対応。英語が特に強い</dd>
+      <dt>料金</dt><dd>無料プランあり（文字起こし・AI要約は無制限、保存400分/チーム） / Pro $18/シート/月（年払い $10） / Business $29/シート/月（年払い $19） / Enterprise $39（年払いのみ）</dd>
+      <dt>精度・特徴</dt><dd>100以上の言語で文字起こし（公式）。英語圏の会議・CRM連携が強い</dd>
+      <dt>確認日</dt><dd>2026-08-17（<a href="https://fireflies.ai/pricing" target="_blank" rel="nofollow noopener">公式の料金ページ</a>で確認）</dd>
     </dl>
     <p class="good">◎ 向いている人</p><ul><li>グローバルチーム</li><li>CRM/Slack 連携で会議を資産化</li><li>多言語が混ざる会議</li></ul>
     <p class="bad">△ 向かない人</p><ul><li>日本語だけで完結する国内会議</li><li>日本語UI/サポート必須の人</li></ul>
     <a class="cta" href="https://fireflies.ai/" target="_blank" rel="nofollow noopener">公式サイトで見る →</a>
+  </article>
+  <article class="card" id="otolio">
+    <div class="card-head">
+      <h3>Otolio（旧スマート書記）</h3>
+      
+    </div>
+    <p class="verdict">自治体・大企業のガチ議事録運用向け</p>
+    <dl>
+      <dt>料金</dt><dd>料金は非公開（初期費用＋AIクレジット制。人数課金ではないためアカウント数を増やしても料金は変わらない）。14日間の無料トライアルあり（法人・団体のみ・営業デモ後）</dd>
+      <dt>精度・特徴</dt><dd>会議前後の業務まで自動化するAIエージェント方向に路線変更（2025年12月に「スマート書記」から改称）。日本国内（東京リージョン）でデータ保管</dd>
+      <dt>確認日</dt><dd>2026-08-17（<a href="https://www.smartshoki.com/pricing/" target="_blank" rel="nofollow noopener">公式の料金ページ</a>で確認）</dd>
+    </dl>
+    <p class="good">◎ 向いている人</p><ul><li>決裁・共有まで含む正式議事録</li><li>全社員にアカウントを配りたい組織（人数課金ではない）</li><li>導入サポート重視</li></ul>
+    <p class="bad">△ 向かない人</p><ul><li>個人・少人数（法人契約のみ・見積が必要）</li><li>今すぐ自分でサインアップして試したい人（営業デモが前提）</li></ul>
+    <a class="cta" href="https://www.smartshoki.com/" target="_blank" rel="nofollow noopener">公式サイトで見る →</a>
   </article>
   <article class="card" id="plaud">
     <div class="card-head">
@@ -142,19 +147,20 @@ a{color:var(--acc)}
     </div>
     <p class="verdict">対面・オフライン録音が多いなら唯一無二</p>
     <dl>
-      <dt>料金</dt><dd>デバイス買い切り + AIプラン（月額 無料枠あり）</dd>
-      <dt>精度・特徴</dt><dd>専用デバイスで対面・電話の録音品質が高い</dd>
+      <dt>料金</dt><dd>デバイス買い切り: Plaud Note 27,500円 / Note Pro 30,800円 / NotePin 27,500円 / NotePin S 28,600円。AIプランは別売り（年間プロ 16,800円/年＝文字起こし1,200分/月・要約無制限、年間無制限 40,000円/年）。文字起こし追加パック 600分2,000円〜</dd>
+      <dt>精度・特徴</dt><dd>専用デバイスで対面・電話の録音品質が高い。要約は ChatGPT-5.2（公式表記）</dd>
+      <dt>確認日</dt><dd>2026-08-17（<a href="https://jp.plaud.ai/products.json" target="_blank" rel="nofollow noopener">公式の料金ページ</a>で確認）</dd>
     </dl>
     <p class="good">◎ 向いている人</p><ul><li>対面商談・電話が多い営業</li><li>スマホと別に録音機が欲しい人</li><li>後から要約したい人</li></ul>
-    <p class="bad">△ 向かない人</p><ul><li>オンライン会議だけの人（ソフトで十分）</li><li>追加ガジェットを持ちたくない人</li></ul>
+    <p class="bad">△ 向かない人</p><ul><li>オンライン会議だけの人（ソフトで十分）</li><li>月額を払わずデバイスだけで完結させたい人（AIプランは別料金）</li></ul>
     <a class="cta" href="https://jp.plaud.ai/" target="_blank" rel="nofollow noopener">公式サイトで見る →</a>
   </article>
 
   <h2>よくある質問</h2>
-  <details><summary>無料で一番使えるのは？</summary><p>日本語の音声メモ・インタビューなら CLOVA Note（完全無料）、オンライン会議の録画+要約込みなら tl;dv の無料プランが手厚いです。</p></details><details><summary>精度が一番高いのは？</summary><p>日本語の会議では Notta が公称98.86%と高精度。ただし音質・話者数で実測は変わるため、無料枠で自分の環境を必ず試してください。</p></details><details><summary>会社で正式な議事録に使いたい</summary><p>権限管理・決裁フロー・導入サポートまで求めるなら スマート書記/Otolio。個人〜中小の効率化なら Notta で十分なことが多いです。</p></details>
+  <details><summary>CLOVA Note はもう使えないの？</summary><p>使えません。CLOVA Note β は2025年7月31日でサービス終了し、後継は法人・個人向けの LINE WORKS AiNote です。AiNote にはフリープラン（共有300分/月・最大30人・1回60分）があるので、無料で日本語の文字起こしを試す用途はそのまま引き継げます。ただしフリープランのデータはAI学習に利用されるため、機密性が高い会議は有償プラン（ソロ 1,440円/月〜）を選んでください。</p></details><details><summary>無料で一番使えるのは？</summary><p>日本語の会議・インタビューを0円で試すなら LINE WORKS AiNote のフリープラン（300分/月）。オンライン会議の録画+文字起こしを無料枠で回したいなら tl;dv（録画・文字起こしは無制限、AIノートのみ月10回まで）。Notta の無料枠は月120分・1回3分までなので「試用」向けです。</p></details><details><summary>精度が一番高いのは？</summary><p>2026年8月時点で、公称精度の数値を公式サイトに出しているツールはほとんどありません（Notta の「98.86%」も現在の公式サイトからは消えています）。話者分離については LINE WORKS AiNote が国際コンペ DIHARD3（2021年）で世界3位という実績を公表しています。実測は音質・話者数・専門用語で大きく変わるので、必ず無料枠で自分の音声を試してください。</p></details><details><summary>会社で正式な議事録に使いたい</summary><p>権限管理・決裁フロー・導入サポートまで求めるなら Otolio（旧スマート書記）。人数課金ではなくAIクレジット制なので全社員にアカウントを配れますが、料金は非公開で営業デモ→14日間トライアルが前提です。個人〜中小の効率化なら Notta、LINE WORKS を使っている組織なら AiNote のチームプラン（19,800円/月〜）が手っ取り早いです。</p></details><details><summary>掲載している料金はいつの情報？</summary><p>各カードの「確認日」がその料金を公式の料金ページで直接確認した日付です。料金は予告なく変わるので、契約前に必ずリンク先の公式ページで再確認してください。</p></details>
 </main>
 <footer class="wrap">
-  <p>最終更新 2026-07-03 ／ 文字起こしAI 本音比較</p>
+  <p>最終更新 2026-08-17 ／ 文字起こしAI 本音比較</p>
   <p>料金・仕様は各公式サイトで最新をご確認ください。本サイトは情報提供を目的とし、正確性を保証するものではありません。</p>
 </footer>
 <script>
